@@ -19,3 +19,6 @@
 # -Error:java.lang.IllegalArgumentException: Not a managed type: class com.svaha.common.entity.Role
 # --Fix:ADD: @EntityScan({"com.svaha.common.entity", "com.svaha.admin.user"})
 # --- it means: Add your package that you are using To your SpringApplication main class before you run Junit test to create table.
+# -Error: Table empty, not writing data to it.
+# --Fix: Add @Rollback(false)     
+# --- To your Test class, also config "spring.jpa.hibernate.ddl-auto=update" in your application.properties for data, make sure you are using jpa and sql dependencies as well.
