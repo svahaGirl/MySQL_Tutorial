@@ -14,3 +14,8 @@
  #  mysqladmin -u root password 'yourpassword'
 # Now Setup New Connection, give a name for the connection, then use default Hostname and Port, add a password, Test Connection, if successful, click ok.
 # After you successfully created connection, click the connection, you can see the GUI, then click add a new_Schema to create a database.
+
+## Common Errors for creating table using Entity
+# -Error:java.lang.IllegalArgumentException: Not a managed type: class com.svaha.common.entity.Role
+# --Fix:ADD: @EntityScan({"com.svaha.common.entity", "com.svaha.admin.user"})
+# --- it means: Add your package that you are using To your SpringApplication main class before you run Junit test to create table.
