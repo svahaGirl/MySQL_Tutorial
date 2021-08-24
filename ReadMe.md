@@ -1,4 +1,5 @@
-## Tutorial for using MySQL Workbench
+## Tutorial for using MySQL Workbench  Mac Book Pro
+# Lesson 1
 # https://dev.mysql.com/downloads/workbench/
 # Step 1:
 ![image](https://user-images.githubusercontent.com/56694905/130517198-4dfc8f52-d3d9-4023-a924-1716d2a4bd6f.png)
